@@ -12,11 +12,6 @@ export class MyCdkAppStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       autoDeleteObjects: true, 
     });
-
-    new cdk.CfnOutput(this, 'BucketName', {
-      value: myBucket.bucketName,
-    });
-
     // The code that defines your stack goes here
 
     // example resource
